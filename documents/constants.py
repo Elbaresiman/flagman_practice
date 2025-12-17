@@ -1,0 +1,7 @@
+DOCUMENT_STATUSES = (
+    "DRAFT",
+    "SENT",
+    "SIGNED",
+    "REJECTED",
+    "CANCELED"
+)
