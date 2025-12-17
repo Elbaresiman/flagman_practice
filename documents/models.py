@@ -19,8 +19,8 @@ class Document(Base):
 
     sender = relationship(
         "User",
-        foreign_keys=[sender_id],
-        back_populates="sent_documents"
+        back_populates="sent_documents",
+        foreign_keys=[sender_id]
     )
 
     signatures = relationship(

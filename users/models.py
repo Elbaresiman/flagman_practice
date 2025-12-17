@@ -22,5 +22,6 @@ class User(Base):
 
     sent_documents = relationship(
         "Document",
-        back_populates="sender"
+        back_populates="sender",
+        foreign_keys="[Document.sender_id]"
     )
